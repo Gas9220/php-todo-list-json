@@ -7,7 +7,7 @@
 .container {
     margin: auto;
     width: 70%;
-    max-width: 1000px;
+    max-width: 62.5rem;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -17,11 +17,25 @@ ul {
     list-style: none;
 }
 
+li {
+    cursor: pointer;
+    user-select: none;
+}
+
+i {
+    color: red;
+}
+
+li div span:nth-child(2) {
+    margin-left: auto;
+    margin-right: .625rem;
+}
+
 li div {
-    padding: 10px;
+    padding: .625rem;
     display: flex;
     justify-content: space-between;
-    width: 300px;
+    width: 25rem;
 }
 
 .completed {

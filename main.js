@@ -34,6 +34,18 @@ createApp({
                     this.todos = response.data;
                 })
         },
+        deleteTodo(index) {
+            const data = {
+                todoToDelete: index
+            };
+
+            axios.post('server.php', data, {
+                headers: { 'Content-Type': 'multipart/form-data' }
+            })
+                .then((response) => {
+                    this.todos = response.data;
+                })
+        },
         todoStatus(todo) {
             return todo.done ? "Completed" : "To complete"
         },
