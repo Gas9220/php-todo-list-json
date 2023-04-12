@@ -17,9 +17,9 @@
     <div id="app">
         <div class="container">
             <ul>
-                <li v-for="todo in todos">
+                <li v-for="(todo, index) in todos">
                     <div>
-                        <span :class="{ completed: todo.done }">{{ todo.text }}</span>
+                        <span @click="toggleTodo(index)" :class="{ completed: todo.done }">{{ todo.text }}</span>
                         <span>{{todoStatus(todo)}}</span>
                     </div>
                 </li>
