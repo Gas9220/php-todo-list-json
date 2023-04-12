@@ -19,8 +19,8 @@
             <ul>
                 <li v-for="todo in todos">
                     <div>
-                        <span>{{ todo.text }}</span>
-                        <span>{{ todo.done }}</span>
+                        <span :class="{ completed: todo.done }">{{ todo.text }}</span>
+                        <span>{{todoStatus(todo)}}</span>
                     </div>
                 </li>
                 <li>
