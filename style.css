@@ -17,7 +17,7 @@ ul {
     list-style: none;
 }
 
-ul div {
+li div {
     padding: 10px;
     display: flex;
     justify-content: space-between;

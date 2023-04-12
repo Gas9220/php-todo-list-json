@@ -23,6 +23,16 @@
                         <span>{{ todo.done }}</span>
                     </div>
                 </li>
+                <li>
+                    <form @submit.prevent="addTodo" class="new-todo">
+                        <div>
+                            <label for="todo">New Todo</label>
+                            <input type="text" id="todo" v-model="newTodo">
+                            <button type="submit">Add</button>
+                        </div>
+
+                    </form>
+                </li>
             </ul>
         </div>
 
