@@ -28,7 +28,7 @@
         <div class="container">
             <ul>
                 <li v-for="(todo, index) in todos">
-                    <div>
+                    <div class="todo-item" :class="{ done: todo.done }">
                         <span @click="toggleTodo(index)" :class="{ completed: todo.done }">{{ todo.text }}</span>
                         <span>{{todoStatus(todo)}}</span>
                         <i @click="deleteTodo(index)" class="fa-solid fa-trash"></i>

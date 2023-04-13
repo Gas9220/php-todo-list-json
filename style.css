@@ -49,6 +49,24 @@ li div {
     width: 25rem;
 }
 
+.todo-item {
+    background-color: lightskyblue;
+    padding: 1.25rem;
+    margin-bottom: .8rem;
+    border-radius: .725rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+
+.done {
+    background-color: lightgreen;
+}
+
+.todo {
+    background-color: lightcoral;
+}
+
 .completed {
     text-decoration: line-through;
 }
